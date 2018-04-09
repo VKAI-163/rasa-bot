@@ -1,0 +1,39 @@
+action_factory: remote
+action_names:
+- default
+- greet
+- goodbye
+- youarewelcome
+- search_concerts
+- search_venues
+- show_concert_reviews
+- show_venue_reviews
+actions:
+- default
+- greet
+- goodbye
+- youarewelcome
+- search_concerts
+- search_venues
+- show_concert_reviews
+- show_venue_reviews
+config:
+  store_entities_as_slots: true
+entities:
+- name
+intents:
+- greet
+- thankyou
+- goodbye
+- search_concerts
+- search_venues
+- compare_reviews
+slots:
+  concerts:
+    initial_value: null
+    type: rasa_core.slots.ListSlot
+  venues:
+    initial_value: null
+    type: rasa_core.slots.ListSlot
+templates: {}
+topics: []

@@ -32,5 +32,18 @@ Here we’ll just talk to the bot on the command line:
 python3 -m rasa_core.run -d models/dialogue -u models/nlu/default/current
 ```
 
+## Next Chapter:
+
+To train the dialogue model, run:
+
+```
+python3 -m rasa_core.train -s data/stories_concert.md -d concert_domain_remote.yml -o models/dialogue_concert
+```
+
+Start Server
+```
+python3 -m rasa_core.server -d models/dialogue_concert -u models/nlu/default/current -o out.log
+```
+
 Reference:
 https://core.rasa.com/tutorial_basics.html#tutorial-basics
