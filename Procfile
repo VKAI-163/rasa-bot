@@ -1,0 +1,1 @@
+python -m rasa_core.server -d models/dialogue_concert -u models/nlu/default/current -P $PORT

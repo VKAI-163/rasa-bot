@@ -19,7 +19,7 @@ export LC_ALL=en_US.UTF-8
 
 Lets run to train our NLU model
 ```
-python -m rasa_nlu.train -c nlu_model_config.json --fixed_model_name current
+python3 -m rasa_nlu.train -c nlu_model_config.json --fixed_model_name current
 
 ```
 To train the dialogue model, run:

@@ -1,0 +1,6 @@
+---
+applications:
+- name: rasa-bot
+  memory: 2G
+  disk_quota: 2G
+  instances: 1
